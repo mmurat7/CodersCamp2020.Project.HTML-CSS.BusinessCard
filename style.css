@@ -1,0 +1,135 @@
+/* Basics */
+:root {
+  --black: #0f0f0f;
+  --white: #eeeeee;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-size: 10px;
+  color: var(--black);
+}
+
+body {
+  margin: 0;
+  background-color: var(--white);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  color: inherit;
+}
+
+/* Header */
+#home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.bgc {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-1 {
+  background-image: url(src/header1.jpg);
+  animation: change-1 30s linear infinite;
+}
+.header-2 {
+  background-image: url(src/header2.jpg);
+  animation: change-2 30s linear infinite;
+}
+.header-3 {
+  background-image: url(src/header3.jpg);
+  animation: change-3 30s linear infinite;
+}
+
+.violet-filter {
+  z-index: 1;
+  background-color: rgba(26, 0, 41, 0.8);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  font-size: 9rem;
+  animation: logo-rotation 30s linear infinite;
+}
+
+h1 {
+  flex-basis: 40%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  font-size: 7.5rem;
+  text-align: center;
+}
+
+.next-section-info {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+.next-section-info>p {
+  margin: 0;
+}
+
+.arrow {
+  font-size: 4rem;
+  animation: arrow-move 1s linear infinite;
+}
+
+@keyframes change-1 {
+  0% {opacity: 1;}
+  16.67% {opacity: 1;}
+  33.33% {opacity: 0;}
+  50% {opacity: 0;}
+  66.67% {opacity: 0;}
+  83.33% {opacity: 0;} 
+  100% {opacity: 1;}
+}
+
+@keyframes change-2 {
+  0% {opacity: 0;}
+  16.67% {opacity: 0;}
+  33.33% {opacity: 1;}
+  50% {opacity: 1;}
+  66.67% {opacity: 0;}
+  83.33% {opacity: 0;} 
+  100% {opacity: 0;}
+}
+@keyframes change-3 {
+  0% {opacity: 0;}
+  16.67% {opacity: 0;}
+  33.33% {opacity: 0;}
+  50% {opacity: 0;}
+  66.67% {opacity: 1;}
+  83.33% {opacity: 1;} 
+  100% {opacity: 0;}
+}
+
+@keyframes logo-rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes arrow-move {
+  from {transform: translateY(0); opacity: 1;}
+  to {transform: translateY(20px); opacity: 0;}
+}
