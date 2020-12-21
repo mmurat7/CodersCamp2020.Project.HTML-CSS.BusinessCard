@@ -1,50 +1,100 @@
 @media screen and (max-width: 1366px) {
+/* ---------------------------------------- Basics ---------------------------------------- */
   h1 {
     font-size: 6rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .logo {
-    font-size: 8rem;
-  }
-
+/* ---------------------------------------- Basics ---------------------------------------- */
   h1 {
     font-size: 5rem;
-  }
-}
+    }
 
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .logo {
-    font-size: 7rem;
-  }
-
-  h1 {
+  h2 {
     font-size: 3rem;
   }
 
-  .next-section-info>p{
+  p {
     font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+/* ---------------------------------------- Header ---------------------------------------- */
+  .logo {
+    font-size: 8rem;
   }
 
   .arrow {
     font-size: 3rem;
   }
+
+/* ---------------------------------------- About me ---------------------------------------- */
+  .about-me-container {
+    flex-basis: 90%;
+  }
+
+  .about-me-container>img {
+    width: 30%;
+    margin: 40px auto;
+  }
+
+  .about-me-container>p {
+    width: 90%;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+/* ---------------------------------------- Basics ---------------------------------------- */
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+/* ---------------------------------------- About me ---------------------------------------- */
+  .about-me-container>img {
+    margin: 30px auto;
+  }
+
+  .about-me-container>p {
+    padding-bottom: 30px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+/* ---------------------------------------- Basics ---------------------------------------- */
+  h1 {
+    font-size: 3rem;
+  }
+
+/* ---------------------------------------- Header ---------------------------------------- */
+  .logo {
+    font-size: 7rem;
+  }
 }
 
 @media screen and (max-width: 812px) and (orientation: landscape) {
-  .logo {
-    font-size: 6rem;
-  }
-
+/* ---------------------------------------- Basics ---------------------------------------- */
   h1 {
     font-size: 3rem;
+  }
+
+/* ---------------------------------------- Header ---------------------------------------- */
+  .logo {
+    font-size: 6rem;
   }
 
   .next-section-info {
@@ -52,7 +102,6 @@
   }
 
   .next-section-info>p{
-    font-size: 1.5rem;
     line-height: normal;
   }
 
