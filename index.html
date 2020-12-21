@@ -18,16 +18,16 @@
         <div class="header-1 bgc"></div>
         <div class="header-2 bgc"></div>
         <div class="header-3 bgc"></div>
-        <div class="violet-filter bgc">
-            <span class="logo"><i class="fab fa-connectdevelop"></i></span>
-            <h1>Hi, I'm Mateusz. I'm a front-end developer.</h1>
-            <div class="next-section-info">
+        <div class="violet-filter bgc flex-col">
+            <span class="logo flex-row"><i class="fab fa-connectdevelop"></i></span>
+            <h1 class="flex-row">Hi, I'm Mateusz. I'm a front-end developer.</h1>
+            <div class="next-section-info flex-col">
                 <p>Learn more about what I do</p>
                 <a href="#about-me" class="arrow"><i class="fas fa-angle-down"></i></a>
             </div>
         </div>
     </header>
-    <section id="about-me">
+    <section id="about-me" class="flex-row">
         <div class="about-me-container container">
             <h2>Who am I?</h2>
             <img src="src/portrait.png" alt="portrait">
@@ -40,22 +40,107 @@
                 looking for opportunities to grow as a Front-End Developer.</p>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="flex-col">
         <h2>Languages and technologies I can use:</h2>
-        <div class="skills-container container">
-            <div class="skill"><i class="fab fa-html5"></i><span class="stack label">HTML5</span></div>
-            <div class="skill"><i class="fab fa-css3"></i><span class="stack label">CSS3</span></div>
-            <div class="skill"><i class="fab fa-js"></i><span class="stack label">JavaScript</span></div>
-            <div class="skill"><i class="fab fa-react"></i><span class="stack label">React.js</span></div>
-            <div class="skill"><i class="fab fa-node"></i><span class="stack label">Node.js</span></div>
-            <div class="skill"><i class="fab fa-bootstrap"></i><span class="stack label">Bootstrap</span></div>
-            <div class="skill"><i class="fab fa-sass"></i><span class="stack label">SASS</span></div>
-            <div class="skill"><i class="fab fa-wordpress"></i><span class="stack label">Wordpress</span></div>
-            <div class="skill"><i class="fab fa-git"></i><span class="stack label">GIT</span></div>
+        <div class="skills-container container flex-row">
+            <div class="skill flex-col"><i class="fab fa-html5"></i><span class="label">HTML5</span></div>
+            <div class="skill flex-col"><i class="fab fa-css3"></i><span class="label">CSS3</span></div>
+            <div class="skill flex-col"><i class="fab fa-js"></i><span class="label">JavaScript</span></div>
+            <div class="skill flex-col"><i class="fab fa-react"></i><span class="label">React.js</span></div>
+            <div class="skill flex-col"><i class="fab fa-node"></i><span class="label">Node.js</span></div>
+            <div class="skill flex-col"><i class="fab fa-bootstrap"></i><span class="label">Bootstrap</span></div>
+            <div class="skill flex-col"><i class="fab fa-sass"></i><span class="label">SASS</span></div>
+            <div class="skill flex-col"><i class="fab fa-wordpress"></i><span class="label">Wordpress</span></div>
+            <div class="skill flex-col"><i class="fab fa-git"></i><span class="label">GIT</span></div>
         </div>
     </section>
-    <section id="portfolio"></section>
-    <!-- <footer id="footer">Copyrights &copy; 2020 Mateusz Murat</footer> -->
+    <section id="portfolio">
+        <h2>My recent work:</h2>
+        <div class="portfolio-container flex-row">
+            <div class="project">
+                <figure class="picture iban">
+                    <img src="src/iban.jpg" alt="">
+                    <div class="overlay">
+                        <h3 class="title">IBAN Checker</h3>
+                        <p class="description">Simply check if you have the right IBAN.</p>
+                        <button class="btn">See more</button>
+                    </div>
+                </figure>
+            </div>
+            <div class="project">
+                <figure class="picture beer">
+                    <img src="src/beer.jpg" alt="">
+                    <div class="overlay">
+                        <h3 class="title">Beer App</h3>
+                        <p class="description">Learn more about beers from all over the world.</p>
+                        <button class="btn">See more</button>
+                    </div>
+                </figure>
+            </div>
+            <div class="project">
+                <figure class="picture drums">
+                    <img src="src/drums.jpg" alt="">
+                    <div class="overlay">
+                        <h3 class="title">Drum Kit</h3>
+                        <p class="description">Use your keyboard to feel lika a real drummer!</p>
+                        <button class="btn">See more</button>
+                    </div>
+                </figure>
+            </div>
+            <div class="project">
+                <figure class="picture weather">
+                    <img src="src/weather.jpg" alt="">
+                    <div class="overlay">
+                        <h3 class="title">Weather App</h3>
+                        <p class="description">Keep up to date with the weather forecast.</p>
+                        <button class="btn">See more</button>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-container flex-row">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <h4>Mateusz Murat</h4>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/mateusz-murat-35856b156/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/mmurat7" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100010477270954" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+                <address>
+                    Frontend Developer
+                    <br>
+                    Poland, Kraków
+                    <br>
+                    698 680 556
+                    <br>
+                    mateuszdanielmurat@gmail.com
+                </address>
+            </div>
+            <form action="#footer">
+                <h3>Contact me!</h3>
+                <div class="form-container flex-row">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Your email address">
+                    <textarea placeholder="How can I help you?"></textarea>
+                    <input type="submit" value="Send" class="btn">
+                </div>
+            </form>
+        </div>
+        <p>Copyrights &copy; 2020 Mateusz Murat</p>
+    </footer>
 </body>
 
 </html>
