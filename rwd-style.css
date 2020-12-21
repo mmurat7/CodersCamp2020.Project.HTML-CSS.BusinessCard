@@ -1,0 +1,43 @@
+@media screen and (max-width: 1366px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 8rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    font-size: 7rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .next-section-info>p{
+    font-size: 1.5rem;
+  }
+
+  .arrow {
+    font-size: 3rem;
+  }
+
+  /* nav, .contact-info, form {
+    flex-basis: 100%;
+  } */
+}

@@ -69,6 +69,7 @@ ul {
 .flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .flex-col {
@@ -199,7 +200,7 @@ span.stack {
 }
 
 .skills-container {
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 80%;
   margin-top: 60px;
 }
@@ -225,7 +226,7 @@ span.label {
 }
 
 .portfolio-container {
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: 80%;
   margin: 60px auto 0 auto;
 }
