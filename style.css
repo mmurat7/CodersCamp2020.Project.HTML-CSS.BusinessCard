@@ -6,7 +6,8 @@
   --blue-transparent: #7510f7cc;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -52,7 +53,9 @@ ul {
   list-style: none;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   color: inherit;
   font-family: inherit;
@@ -114,10 +117,12 @@ ul {
   background-image: url(src/header1.jpg);
   animation-name: change-1;
 }
+
 .header-2 {
   background-image: url(src/header2.jpg);
   animation-name: change-2;
 }
+
 .header-3 {
   background-image: url(src/header3.jpg);
   animation-name: change-3;
@@ -130,7 +135,9 @@ ul {
   align-items: center;
 }
 
-.logo, h1, .next-section-info {
+.logo,
+h1,
+.next-section-info {
   align-items: center;
 }
 
@@ -225,7 +232,6 @@ span.label {
 }
 
 .portfolio-container {
-  /* flex-wrap: wrap; */
   width: 80%;
   margin: 60px auto 0 auto;
 }
@@ -254,22 +260,23 @@ span.label {
 .overlay {
   position: absolute;
   z-index: 1;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: var(--black);
   opacity: 0;
   transition: 0.5s;
 }
 
-.title, .description {
+.title,
+.description {
   color: var(--white);
 }
 
 .title {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -363,7 +370,9 @@ form h3 {
   outline: none;
 }
 
-input[type='text'], input[type='email'], textarea {
+input[type='text'],
+input[type='email'],
+textarea {
   flex-basis: 100%;
   padding: 10px;
   border: 2px solid var(--blue);
@@ -384,39 +393,116 @@ form *::placeholder {
   font-size: 1.5rem;
   padding: 60px 0 10px 0;
 }
+
 /* ---------------------------------------- Keyframes ---------------------------------------- */
 @keyframes change-1 {
-  0% {opacity: 1;}
-  16.67% {opacity: 1;}
-  33.33% {opacity: 0;}
-  50% {opacity: 0;}
-  66.67% {opacity: 0;}
-  83.33% {opacity: 0;} 
-  100% {opacity: 1;}
+  0% {
+    opacity: 1;
+  }
+
+  16.67% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  66.67% {
+    opacity: 0;
+  }
+
+  83.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 @keyframes change-2 {
-  0% {opacity: 0;}
-  16.67% {opacity: 0;}
-  33.33% {opacity: 1;}
-  50% {opacity: 1;}
-  66.67% {opacity: 0;}
-  83.33% {opacity: 0;} 
-  100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+
+  16.67% {
+    opacity: 0;
+  }
+
+  33.33% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  66.67% {
+    opacity: 0;
+  }
+
+  83.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
 @keyframes change-3 {
-  0% {opacity: 0;}
-  16.67% {opacity: 0;}
-  33.33% {opacity: 0;}
-  50% {opacity: 0;}
-  66.67% {opacity: 1;}
-  83.33% {opacity: 1;} 
-  100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+
+  16.67% {
+    opacity: 0;
+  }
+
+  33.33% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  66.67% {
+    opacity: 1;
+  }
+
+  83.33% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
 @keyframes logo-rotation {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
+
 @keyframes arrow-move {
-  from {transform: translateY(0); opacity: 1;}
-  to {transform: translateY(20px); opacity: 0;}
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
 }
