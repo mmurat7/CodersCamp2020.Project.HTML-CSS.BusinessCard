@@ -1,15 +1,151 @@
 @media screen and (max-width: 1366px) {
-/* ---------------------------------------- Basics ---------------------------------------- */
+
+  /* ---------------------------------------- Basics ---------------------------------------- */
   h1 {
     font-size: 6rem;
+  }
+
+  /* ---------------------------------------- Skills ---------------------------------------- */
+  .skill {
+    font-size: 14rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-/* ---------------------------------------- Basics ---------------------------------------- */
+
+  /* ---------------------------------------- Basics ---------------------------------------- */
   h1 {
     font-size: 5rem;
-    }
+  }
+
+  h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  /* ---------------------------------------- Header ---------------------------------------- */
+  .logo {
+    font-size: 8rem;
+  }
+
+  .arrow {
+    font-size: 3rem;
+  }
+
+  /* ---------------------------------------- About me ---------------------------------------- */
+  .about-me-container {
+    flex-basis: 90%;
+  }
+
+  .about-me-container>img {
+    width: 30%;
+    margin: 40px auto;
+  }
+
+  .about-me-container>p {
+    width: 90%;
+    padding-bottom: 40px;
+  }
+
+  /* ---------------------------------------- Skills ---------------------------------------- */
+  .skills-container {
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .skill {
+    padding-bottom: 40px;
+    font-size: 10rem;
+  }
+
+  span.label {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  /* ---------------------------------------- Basics ---------------------------------------- */
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  /* ---------------------------------------- About me ---------------------------------------- */
+  .about-me-container>img {
+    margin: 30px auto;
+  }
+
+  .about-me-container>p {
+    padding-bottom: 30px;
+  }
+
+  /* ---------------------------------------- Skills ---------------------------------------- */
+  .skills-container {
+    margin-top: 30px;
+  }
+
+  .skill {
+    flex-basis: 50%;
+    padding-bottom: 30px;
+    font-size: 10rem;
+  }
+
+  .skill:nth-last-child(1) {
+    flex-grow: 1;
+  }
+
+  span.label {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  /* ---------------------------------------- Basics ---------------------------------------- */
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* ---------------------------------------- Header ---------------------------------------- */
+  .logo {
+    font-size: 7rem;
+  }
+
+  /* ---------------------------------------- Skills ---------------------------------------- */
+  .skill {
+    flex-basis: 100%;
+    font-size: 12rem;
+  }
+
+  span.label {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+
+  /* ---------------------------------------- Basics ---------------------------------------- */
+  h1 {
+    font-size: 3rem;
+  }
 
   h2 {
     font-size: 3rem;
@@ -24,16 +160,24 @@
     padding-top: 40px;
   }
 
-/* ---------------------------------------- Header ---------------------------------------- */
+  /* ---------------------------------------- Header ---------------------------------------- */
   .logo {
-    font-size: 8rem;
+    font-size: 6rem;
+  }
+
+  .next-section-info {
+    padding-bottom: 20px;
+  }
+
+  .next-section-info>p {
+    line-height: normal;
   }
 
   .arrow {
     font-size: 3rem;
   }
 
-/* ---------------------------------------- About me ---------------------------------------- */
+  /* ---------------------------------------- About me ---------------------------------------- */
   .about-me-container {
     flex-basis: 90%;
   }
@@ -47,65 +191,19 @@
     width: 90%;
     padding-bottom: 40px;
   }
-}
 
-@media screen and (max-width: 480px) {
-/* ---------------------------------------- Basics ---------------------------------------- */
-  h1 {
-    font-size: 4rem;
+  /* ---------------------------------------- Skills ---------------------------------------- */
+  .skills-container {
+    width: 90%;
+    margin-top: 40px;
   }
 
-  h2 {
-    font-size: 2.5rem;
+  .skill {
+    padding-bottom: 40px;
+    font-size: 10rem;
   }
 
-  .container {
-    padding-top: 40px;
-  }
-
-/* ---------------------------------------- About me ---------------------------------------- */
-  .about-me-container>img {
-    margin: 30px auto;
-  }
-
-  .about-me-container>p {
-    padding-bottom: 30px;
-  }
-
-}
-
-@media screen and (max-width: 360px) {
-/* ---------------------------------------- Basics ---------------------------------------- */
-  h1 {
-    font-size: 3rem;
-  }
-
-/* ---------------------------------------- Header ---------------------------------------- */
-  .logo {
-    font-size: 7rem;
-  }
-}
-
-@media screen and (max-width: 812px) and (orientation: landscape) {
-/* ---------------------------------------- Basics ---------------------------------------- */
-  h1 {
-    font-size: 3rem;
-  }
-
-/* ---------------------------------------- Header ---------------------------------------- */
-  .logo {
-    font-size: 6rem;
-  }
-
-  .next-section-info {
-    padding-bottom: 20px;
-  }
-
-  .next-section-info>p{
-    line-height: normal;
-  }
-
-  .arrow {
-    font-size: 3rem;
+  span.label {
+    font-size: 2rem;
   }
 }
