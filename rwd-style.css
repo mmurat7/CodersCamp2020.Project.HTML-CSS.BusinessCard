@@ -14,6 +14,19 @@
   .description {
     font-size: 1.5rem;
   }
+
+  /* ---------------------------------------- Footer ---------------------------------------- */
+  nav {
+    flex-basis: 15%;
+  }
+
+  .contact-info {
+    flex-basis: 20%;
+  }
+
+  form {
+    margin: 0 0 0 auto;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -32,6 +45,30 @@
 
   .overlay button {
     bottom: 15%;
+  }
+
+  .btn {
+    padding: 10px 40px;
+    font-size: 1.5rem;
+  }
+
+  /* ---------------------------------------- Footer ---------------------------------------- */
+  li a {
+    font-size: 1.5rem;
+  }
+
+  .contact-info,
+  h4 {
+    font-size: 2rem;
+  }
+
+  .social a {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+
+  .contact-info address {
+    font-size: 1.5rem;
   }
 
   .btn {
@@ -104,21 +141,38 @@
   /* ---------------------------------------- Portfolio ---------------------------------------- */
   .portfolio-container {
     width: 90%;
-    margin: 40px auto 0 auto;
+    margin-top: 40px;
+    justify-content: center;
   }
 
-  .title {
-    top: 10%;
-    font-size: 2rem;
+  .project {
+    flex-basis: 80%;
   }
 
-  .overlay button {
-    bottom: 10%;
+  /* ---------------------------------------- Footer ---------------------------------------- */
+  #footer {
+    margin-top: 50px;
+    padding-top: 40px;
   }
 
-  .btn {
-    padding: 5px 30px;
-    font-size: 1.5rem;
+  .footer-container {
+    width: 90%;
+  }
+
+  .contact-info {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  nav {
+    flex-basis: 20%;
+    margin-left: 10px;
+  }
+
+  form {
+    flex-basis: 100%;
+    order: -1;
+    margin-bottom: 40px;
   }
 }
 
@@ -173,20 +227,6 @@
   .project {
     flex-basis: 100%;
   }
-
-  .title {
-    top: 20%;
-    font-size: 2.5rem;
-  }
-
-  .overlay button {
-    bottom: 15%;
-  }
-
-  .btn {
-    padding: 10px 40px;
-    font-size: 1.5rem;
-  }
 }
 
 @media screen and (max-width: 360px) {
@@ -209,21 +249,6 @@
 
   span.label {
     font-size: 2rem;
-  }
-
-  /* ---------------------------------------- Portfolio ---------------------------------------- */
-  .title {
-    top: 10%;
-    font-size: 2rem;
-  }
-
-  .overlay button {
-    bottom: 10%;
-  }
-
-  .btn {
-    padding: 5px 30px;
-    font-size: 1.5rem;
   }
 }
 
@@ -298,19 +323,36 @@
   .portfolio-container {
     width: 90%;
     margin: 40px auto 0 auto;
+    justify-content: center;
   }
 
-  .title {
-    top: 10%;
-    font-size: 2rem;
+  .project {
+    flex-basis: 80%;
   }
 
-  .overlay button {
-    bottom: 10%;
+  /* ---------------------------------------- Footer ---------------------------------------- */
+  #footer {
+    margin-top: 50px;
+    padding-top: 40px;
   }
 
-  .btn {
-    padding: 5px 30px;
-    font-size: 1.5rem;
+  .footer-container {
+    width: 90%;
+  }
+
+  .contact-info {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  nav {
+    flex-basis: 20%;
+    margin-left: 10px;
+  }
+
+  form {
+    flex-basis: 100%;
+    order: -1;
+    margin-bottom: 40px;
   }
 }
